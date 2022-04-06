@@ -16,9 +16,11 @@ const Home: NextPage = () => {
   return (
     <>
       <Header />
-      <Section style={{ backgroundColor: RelativeColors.purple500 }}>
-        <Intro />
-      </Section>
+      <IntroWrapper>
+        <Section style={{ backgroundColor: RelativeColors.purple500 }}>
+          <Intro />
+        </Section>
+      </IntroWrapper>
       <Section>
         <Commerce />
       </Section>
@@ -45,6 +47,12 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+const IntroWrapper = styled.div`
+  .section-content {
+    padding: 0px;
+  }
+`
 
 const PreviewWrapper = styled.div`
   .section-content {
