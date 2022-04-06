@@ -14,11 +14,11 @@ export const Footer = () => (
         <StyledLink href="https://business.vreview.tv/policies/terms" target="_blank" rel="noopener noreferrer">
           서비스 이용약관
         </StyledLink>
-        |
+        {' | '}
         <StyledLink href="https://business.vreview.tv/policies/privacy-policy" target="_blank" rel="noopener noreferrer">
           개인정보처리방침
         </StyledLink>
-        |
+        {' | '}
         <StyledLink href="https://business.vreview.tv/policies/refund" target="_blank" rel="noopener noreferrer">
           취소 및 환불 정책
         </StyledLink>
@@ -28,7 +28,9 @@ export const Footer = () => (
   </Container>
 )
 
-const Container = styled.div``
+const Container = styled.div`
+  background-color: #F8F8F8;
+`
 
 const Content = styled.div`
   padding: 19px 0px;
