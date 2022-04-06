@@ -1,3 +1,4 @@
+import { SemanticColors } from '@/theme/Colors'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -5,13 +6,15 @@ export const Header = () => {
   return (
     <Container>
       <Content>
-        <Text>Header</Text>
+        <Logo src="/assets/logo.svg" />
       </Content>
     </Container>
   )
 }
 
-const Container = styled.div``
+const Container = styled.div`
+  background-color: ${SemanticColors.background};
+`
 
 const Content = styled.div`
   padding: 19px 0px;
@@ -22,4 +25,4 @@ const Content = styled.div`
   }
 `
 
-const Text = styled.p``
+const Logo = styled.img``
