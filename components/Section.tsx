@@ -9,7 +9,7 @@ type Props = {
 export const Section: React.FC<Props> = ({ children, style }) => {
   return (
     <Container style={style}>
-      <Content>{children}</Content>
+      <Content className="section-content">{children}</Content>
     </Container>
   )
 }
