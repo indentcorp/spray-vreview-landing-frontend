@@ -24,9 +24,11 @@ const Home: NextPage = () => {
       <Section>
         <Commerce />
       </Section>
-      <Section style={{ backgroundColor: '#0D0D0E' }}>
-        <Preview />
-      </Section>
+      <PreviewWrapper>
+        <Section style={{ backgroundColor: '#0D0D0E' }}>
+          <Preview />
+        </Section>
+      </PreviewWrapper>
       <Section>
         <CustomerResponse />
       </Section>
@@ -49,5 +51,12 @@ export default Home
 const IntroWrapper = styled.div`
   .section-content {
     padding: 0px;
+  }
+`
+
+const PreviewWrapper = styled.div`
+  .section-content {
+    padding: 0px;
+    max-width: unset;
   }
 `
