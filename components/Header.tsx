@@ -27,6 +27,7 @@ const Content = styled.div`
   max-width: 980px;
   @media (max-width: 980px) {
     max-width: 375px;
+    padding: 19px 32px;
   }
 `
 
