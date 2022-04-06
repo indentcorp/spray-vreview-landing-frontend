@@ -13,6 +13,11 @@ export const Header = () => {
 }
 
 const Container = styled.div`
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
   background-color: ${SemanticColors.background};
 `
 
@@ -22,6 +27,7 @@ const Content = styled.div`
   max-width: 980px;
   @media (max-width: 980px) {
     max-width: 375px;
+    padding: 19px 32px;
   }
 `
 
