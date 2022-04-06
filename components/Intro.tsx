@@ -29,7 +29,7 @@ const Container = styled.div`
 `
 
 const Content = styled.div`
-  @media (max-width: 980px) {
+  @media (max-width: 1023px) {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,7 +42,7 @@ const Title = styled.p`
   font-weight: 700;
   line-height: 62.4px;
   color: ${RelativeColors.gray0};
-  @media (max-width: 980px) {
+  @media (max-width: 1023px) {
     font-size: 2rem;
     font-weight: 700;
     line-height: 41.6px;
@@ -54,7 +54,7 @@ const Logo = styled.img`
   width: 265px;
   height: 58px;
   margin-top: 32px;
-  @media (max-width: 980px) {
+  @media (max-width: 1023px) {
     width: 224px;
     height: 49px;
     margin-top: 18px;
@@ -67,7 +67,7 @@ const SprayImage = styled.img`
   right: 0px;
   width: 570px;
   height: 576px;
-  @media (max-width: 980px) {
+  @media (max-width: 1023px) {
     width: 311px;
     height: 314px;
     bottom: -124px;

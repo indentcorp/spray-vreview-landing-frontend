@@ -17,10 +17,10 @@ export const Section: React.FC<Props> = ({ children, style }) => {
 const Container = styled.div``
 
 const Content = styled.div`
-  padding: 160px 0px;
+  padding: 160px 32px;
   margin: 0 auto;
-  max-width: 980px;
-  @media (max-width: 980px) {
+  max-width: 1023px;
+  @media (max-width: 1023px) {
     max-width: 375px;
   }
 `
