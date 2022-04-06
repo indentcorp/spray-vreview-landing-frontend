@@ -8,7 +8,12 @@ export const Marketing = () => {
       <Main>글로벌 고객을 통해 <br />추가 매출의 기회를</Main>
       <Content>
         <Title>브이리뷰 고객사만을 위한 서비스</Title>
-        <Description>최소 500% ROAS를 보장하는 <br/> 글로벌 마케팅 솔루션</Description>
+        <Description className="desktop">
+          최소 500% ROAS를 보장하는 <br/> 글로벌 마케팅 솔루션
+        </Description>
+        <Description className="mobile">
+          최소 500% <br/> ROAS를 보장하는 <br/> 글로벌 마케팅 솔루션
+        </Description>
         <ReviewCardImage src="/assets/spray-card.png" />
       </Content>
     </Container>
@@ -25,6 +30,9 @@ const Main = styled.p`
   font-size: 3rem;
   line-height: 130%;
   color: ${RelativeColors.gray0};
+  @media (max-width: 980px) {
+    font-size: 2rem;
+  }
 `
 
 const Content = styled.div`
@@ -34,6 +42,10 @@ const Content = styled.div`
   background-color: ${RelativeColors.purple600};
   border-radius: 24px;
   margin-top: 40px;
+  @media (max-width: 980px) {
+    width: 311px;
+    height: 627px;
+  }
 `
 
 const Title = styled.div`
@@ -41,6 +53,9 @@ const Title = styled.div`
   font-size: 1.125rem;
   color: ${RelativeColors.gray0};
   padding: 60px 0 0 60px;
+  @media (max-width: 980px) {
+    padding: 30px 0 0 30px;
+  }
 `
 
 const Description = styled.div`
@@ -49,6 +64,21 @@ const Description = styled.div`
   line-height: 140%;
   color: ${RelativeColors.gray0};
   padding: 16px 0 0 60px;
+  &.desktop {
+    display: block;
+  }
+  &.mobile {
+    display: none;
+  }
+  @media (max-width: 980px) {
+    padding: 16px 0 0 30px;
+    &.desktop {
+      display: none;
+    }
+    &.mobile {
+      display: block;
+    }
+  }
 `
 
 const ReviewCardImage = styled.img`
@@ -58,4 +88,11 @@ const ReviewCardImage = styled.img`
   width: 373px;
   height: 532px;
   clip: rect(0, 373px, 433px, 0);
+  @media (max-width: 980px) {
+    top: 314px;
+    right: 11px;
+    width: 289px;
+    height: 413px;
+    clip: rect(0, 289px, 313px, 0);
+  }
 `
