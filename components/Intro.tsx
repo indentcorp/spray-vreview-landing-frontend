@@ -5,12 +5,14 @@ import styled from 'styled-components'
 export const Intro = () => {
   return (
     <Container>
-      <Title>
-        브이리뷰만의
-        <br />
-        글로벌 마케팅 솔루션
-      </Title>
-      <Logo src="/assets/logo.svg" />
+      <Content>
+        <Title>
+          브이리뷰만의
+          <br />
+          글로벌 마케팅 솔루션
+        </Title>
+        <Logo src="/assets/logo.svg" />
+      </Content>
       <SprayImage src="/assets/spray-iphone.png" />
     </Container>
   )
@@ -18,7 +20,20 @@ export const Intro = () => {
 
 const Container = styled.div`
   position: relative;
-  padding: 160px 0px;
+  width: 100%;
+  height: 590px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`
+
+const Content = styled.div`
+  @media (max-width: 980px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+  }
 `
 
 const Title = styled.p`
@@ -26,18 +41,36 @@ const Title = styled.p`
   font-weight: 700;
   line-height: 62.4px;
   color: ${RelativeColors.gray0};
+  @media (max-width: 980px) {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 41.6px;
+    text-align: center;
+  }
 `
 
 const Logo = styled.img`
   width: 265px;
   height: 58px;
   margin-top: 32px;
+  @media (max-width: 980px) {
+    width: 224px;
+    height: 49px;
+    margin-top: 18px;
+  }
 `
 
 const SprayImage = styled.img`
   position: absolute;
   bottom: -113px;
-  right: 0;
+  right: 0px;
   width: 570px;
   height: 576px;
+  @media (max-width: 980px) {
+    width: 311px;
+    height: 314px;
+    bottom: -124px;
+    left: 0px;
+    margin: 0px auto;
+  }
 `
