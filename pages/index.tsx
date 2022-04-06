@@ -10,14 +10,17 @@ import { Contact } from '@/components/Contact'
 import { Footer } from '@/components/Footer'
 import { RelativeColors, SemanticColors } from '@/theme/Colors'
 import { Preview } from '@/components/Preview'
+import styled from 'styled-components'
 
 const Home: NextPage = () => {
   return (
     <>
       <Header />
-      <Section style={{ backgroundColor: RelativeColors.purple500 }}>
-        <Intro />
-      </Section>
+      <IntroWrapper>
+        <Section style={{ backgroundColor: RelativeColors.purple500 }}>
+          <Intro />
+        </Section>
+      </IntroWrapper>
       {/*TODO: backgroundColor 수정 */}
       <Section style={{ backgroundColor: SemanticColors.background }}>
         <Commerce />
@@ -47,3 +50,9 @@ const Home: NextPage = () => {
 }
 
 export default Home
+
+const IntroWrapper = styled.div`
+  .section-content {
+    padding: 0px;
+  }
+`
