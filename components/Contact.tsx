@@ -47,4 +47,7 @@ const SubMessage = styled.p`
   font-size: 1.125rem;
   line-height: 160%;
   color: ${RelativeColors.gray0};
+  @media (max-width: 980px) {
+    font-size: 1rem;
+  }
 `
