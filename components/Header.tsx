@@ -18,6 +18,8 @@ const Container = styled.div`
   left: 0px;
   right: 0px;
   z-index: 100;
+  height: 60px;
+  justify-content: center;
   background-color: ${SemanticColors.background};
 `
 
