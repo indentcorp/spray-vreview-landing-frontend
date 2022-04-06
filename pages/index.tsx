@@ -21,24 +21,19 @@ const Home: NextPage = () => {
           <Intro />
         </Section>
       </IntroWrapper>
-      {/*TODO: backgroundColor 수정 */}
-      <Section style={{ backgroundColor: SemanticColors.background }}>
+      <Section>
         <Commerce />
       </Section>
-      {/*TODO: backgroundColor 수정 */}
-      <Section style={{ backgroundColor: SemanticColors.background }}>
+      <Section style={{ backgroundColor: '#0D0D0E' }}>
         <Preview />
       </Section>
-      {/*TODO: backgroundColor 수정 */}
-      <Section style={{ backgroundColor: SemanticColors.background }}>
+      <Section>
         <CustomerResponse />
       </Section>
-      {/*TODO: backgroundColor 수정 */}
-      <Section style={{ backgroundColor: SemanticColors.background }}>
+      <Section>
         <Marketing />
       </Section>
-      {/*TODO: backgroundColor 수정 */}
-      <Section style={{ backgroundColor: SemanticColors.background }}>
+      <Section>
         <Price />
       </Section>
       <Section style={{ backgroundColor: RelativeColors.purple700 }}>
