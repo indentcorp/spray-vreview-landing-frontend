@@ -27,9 +27,6 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  @media (max-width: 980px) {
-    padding: 0px 32px;
-  }
 `
 
 const Title = styled.p`
@@ -39,7 +36,7 @@ const Title = styled.p`
   color: ${RelativeColors.gray0};
   text-align: center;
   margin-top: 30px;
-  @media (max-width: 980px) {
+  @media (max-width: 1023px) {
     font-size: 2rem;
     line-height: 41.6px;
     margin-top: 40px;
@@ -48,7 +45,7 @@ const Title = styled.p`
 
 const TextWrapper = styled.div`
   margin-top: 40px;
-  @media (max-width: 980px) {
+  @media (max-width: 1023px) {
     margin-top: 24px;
   }
 `
@@ -65,7 +62,7 @@ const Text = styled.p`
   &.mobile {
     display: none;
   }
-  @media (max-width: 980px) {
+  @media (max-width: 1023px) {
     font-size: 1rem;
     line-height: 25.6px;
     &.desktop {

@@ -10,7 +10,7 @@ export const Preview = () => {
 }
 
 const Container = styled.div`
-  @media (max-width: 980px) {
+  @media (max-width: 1023px) {
     padding: 49px 0px;
   }
 `
@@ -22,7 +22,7 @@ const Background = styled.div`
   height: 600px;
   max-width: 1257px;
   margin: 0 auto;
-  @media (max-width: 980px) {
+  @media (max-width: 1023px) {
     background-image: url('/assets/spray-preview-mobile.png');
     max-width: 249px;
     height: 503px;

@@ -8,10 +8,11 @@ export const Price = () => {
     <Container>
       <Content>
         <GuideText>
-          <Title>판매된 만큼만 <br/> 이용료 부과</Title>
+          <Title>
+            판매된 만큼만 <br /> 이용료 부과
+          </Title>
           <Description>
-            스프레이는 앱 내에서 발생하는 주문 건 대응과 관련한
-            실제 서비스 이용 요금만 청구하고 있습니다.
+            스프레이는 앱 내에서 발생하는 주문 건 대응과 관련한 실제 서비스 이용 요금만 청구하고 있습니다.
           </Description>
           <SubDescription>* 최대 20%까지 청구될 수 있습니다</SubDescription>
         </GuideText>
@@ -21,16 +22,14 @@ export const Price = () => {
   )
 }
 
-const Container = styled.div`
-  padding: 0 32px;
-`
+const Container = styled.div``
 
 const Content = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  @media (max-width: 980px) {
+  @media (max-width: 1023px) {
     flex-direction: column;
     justify-content: flex-start;
   }
@@ -46,8 +45,8 @@ const Title = styled.p`
   font-size: 3rem;
   line-height: 130%;
   color: ${RelativeColors.gray0};
-  @media (max-width: 980px) {
-   font-size: 2rem;
+  @media (max-width: 1023px) {
+    font-size: 2rem;
   }
 `
 
@@ -58,7 +57,7 @@ const Description = styled.p`
   color: ${RelativeColors.gray400};
   padding-top: 40px;
   max-width: 350px;
-  @media (max-width: 980px) {
+  @media (max-width: 1023px) {
     padding-top: 24px;
   }
 `
@@ -69,14 +68,14 @@ const SubDescription = styled.p`
   line-height: 140%;
   color: ${RelativeColors.gray500};
   padding-top: 12px;
-  @media (max-width: 980px) {
+  @media (max-width: 1023px) {
     padding-top: 24px;
   }
 `
 
 const ServiceFeeImage = styled.img`
   width: 403px;
-  @media (max-width: 980px) {
+  @media (max-width: 1023px) {
     width: 311px;
     padding-top: 80px;
   }
