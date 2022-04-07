@@ -74,6 +74,7 @@ const Description = styled.div`
   }
   @media (max-width: 1023px) {
     padding: 16px 0 0 30px;
+    font-size: 1.75rem;
     &.desktop {
       display: none;
     }
