@@ -12,6 +12,11 @@ export const Intro = () => {
           글로벌 마케팅 솔루션
         </Title>
         <Logo src="/assets/logo.svg" />
+        <a href="https://business.vreview.tv" target="_blank" rel="noopener noreferrer">
+          <Button>
+            <ButtonText>입점하기</ButtonText>
+          </Button>
+        </a>
       </Content>
       <SprayImage src="/assets/spray-iphone.png" />
     </Container>
@@ -21,8 +26,8 @@ export const Intro = () => {
 const Container = styled.div`
   position: relative;
   width: 100%;
-  height: 590px;
-  margin-top: 60px;
+  height: 700px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,4 +79,32 @@ const SprayImage = styled.img`
     left: 0px;
     margin: 0px auto;
   }
+`
+
+const Button = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 152px;
+  height: 56px;
+  background-color: ${RelativeColors.gray0};
+  border-radius: 100px;
+  margin-top: 60px;
+  :hover {
+    cursor: pointer;
+    background-color: ${RelativeColors.purple300};
+    p {
+      color: ${RelativeColors.gray0};
+    }
+  }
+  @media (max-width: 1023px) {
+    margin-top: 43px;
+  }
+`
+
+const ButtonText = styled.p`
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 23.22px;
+  color: ${RelativeColors.purple500};
 `
