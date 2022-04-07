@@ -1,4 +1,4 @@
-import { SemanticColors } from '@/theme/Colors'
+import { RelativeColors, SemanticColors } from '@/theme/Colors'
 import React from 'react'
 import styled from 'styled-components'
 
@@ -7,6 +7,9 @@ export const Header = () => {
     <Container>
       <Content>
         <Logo src="/assets/logo.svg" />
+        <a href="https://business.vreview.tv" target="_blank" rel="noopener noreferrer">
+          <Text>입점하기</Text>
+        </a>
       </Content>
     </Container>
   )
@@ -24,6 +27,10 @@ const Container = styled.div`
 `
 
 const Content = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   padding: 19px 32px;
   margin: 0 auto;
   max-width: 1023px;
@@ -33,3 +40,10 @@ const Content = styled.div`
 `
 
 const Logo = styled.img``
+
+const Text = styled.p`
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 18.2px;
+  color: ${RelativeColors.gray0};
+`
