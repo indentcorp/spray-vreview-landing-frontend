@@ -17,6 +17,33 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
+        <title>Spray 스프레이 | 브이리뷰 입점 파트너스</title>
+        <meta
+          name="description"
+          content="스프레이(SPRAY)는 글로벌 후기 커머스 플랫폼으로, 후기 제작과 함께 쇼핑몰 매출 증가를 지원합니다. 버튼 하나로 50억 고객을 만나보세요."
+        />
+        <meta name="keywords" content="스프레이, SPRAY, 영상후기, 브이리뷰, 커머스 플랫폼" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="ko_KR" />
+        <meta property="og:site_name" content="SPRAY" />
+        <meta property="og:url" content="https://spray.vreview.tv" />
+        <meta property="og:title" content="Spray 스프레이 | 브이리뷰 입점 파트너스" />
+        <meta
+          property="og:description"
+          content="스프레이(SPRAY)는 글로벌 후기 커머스 플랫폼으로, 후기 제작과 함께 쇼핑몰 매출 증가를 지원합니다. 버튼 하나로 50억 고객을 만나보세요."
+        />
+        <meta property="og:image" content="/assets/og-thumbnail.png" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:title" content="Spray 스프레이 | 브이리뷰 입점 파트너스" />
+        <meta
+          name="twitter:description"
+          content="스프레이(SPRAY)는 글로벌 후기 커머스 플랫폼으로, 후기 제작과 함께 쇼핑몰 매출 증가를 지원합니다. 버튼 하나로 50억 고객을 만나보세요."
+        />
+        <meta name="twitter:image" content="/assets/og-thumbnail.png" />
+        <meta name="twitter:url" content="https://spray.vreview.tv/" />
+        <meta name="naver-site-verification" content="20abf45289e65e1f705c4f1e5e1ff9ae8a37f204" />
+        <meta name="google-site-verification" content="CXdpJdYjO0KSNIdO_huekQpfp3ZJJ7qEZ9prQ6mAlgA" />
+        <link rel="alternate" href="https://spray.vreview.tv" hrefLang="ko" />
         <script
           dangerouslySetInnerHTML={{
             __html: `;(function () {
