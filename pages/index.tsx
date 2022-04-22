@@ -42,7 +42,7 @@ const Home: NextPage = () => {
         <meta name="twitter:image" content="/assets/og-thumbnail.png" />
         <meta name="twitter:url" content="https://spray.vreview.tv/" />
         <meta name="naver-site-verification" content="20abf45289e65e1f705c4f1e5e1ff9ae8a37f204" />
-        <meta name="google-site-verification" content="CXdpJdYjO0KSNIdO_huekQpfp3ZJJ7qEZ9prQ6mAlgA" />
+        <meta name="google-site-verification" content="QffnvgQqg63JlGEFtuKcRYpt9Mmb8qZeeu45JzsQhfE" />
         <link rel="alternate" href="https://spray.vreview.tv" hrefLang="ko" />
         <script
           dangerouslySetInnerHTML={{
