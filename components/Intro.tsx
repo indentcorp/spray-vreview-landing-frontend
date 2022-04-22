@@ -1,8 +1,16 @@
 import { RelativeColors } from '@/theme/Colors'
+import { gtag } from '@/utils/gtmModule'
 import React from 'react'
 import styled from 'styled-components'
 
 export const Intro = () => {
+  const payload = {
+    event: 'event_action',
+    eventCategory: 'lead',
+    eventAction: 'learn more',
+    eventLabel: 'vreview service',
+    dlContentName: '입점하기',
+  }
   return (
     <Container>
       <Content>
@@ -13,7 +21,11 @@ export const Intro = () => {
         </Title>
         <Logo src="/assets/logo.svg" />
         <a href="https://business.vreview.tv" target="_blank" rel="noopener noreferrer">
-          <Button>
+          <Button
+            onClick={() => {
+              gtag(payload)
+            }}
+          >
             <ButtonText>입점하기</ButtonText>
           </Button>
         </a>
