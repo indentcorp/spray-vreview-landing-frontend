@@ -1,13 +1,28 @@
 import { RelativeColors, SemanticColors } from '@/theme/Colors'
+import { gtag } from '@/utils/gtmModule'
 import React from 'react'
 import styled from 'styled-components'
 
 export const Header = () => {
+  const payload = {
+    event: 'event_action',
+    eventCategory: 'lead',
+    eventAction: 'learn more',
+    eventLabel: 'vreview service',
+    dlContentName: '입점하기',
+  }
   return (
     <Container>
       <Content>
         <Logo src="/assets/logo.svg" />
-        <a href="https://business.vreview.tv" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://business.vreview.tv"
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={() => {
+            gtag(payload)
+          }}
+        >
           <Text>입점하기</Text>
         </a>
       </Content>
